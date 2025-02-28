@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGhvNGd1Y2dnLWtRRUE5UzVwTk96TGtIZTRGd3xBQ3Jtc0trTEFSdWxsdnRQRmtscFdEWHhRNGZkVmxOcWI5THFSZGJvUFlhcHk0Z3N1OVJwRzlRcHZKSmxmaEdpbzJyb3RJQUk3aFpVQk9OdEdUZHEtd2JlOG5WdnpDN0lTQm9qWXhVVmtqVXVOOTFzZVItWWxqYw&q=https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Ffont-awesome%2F6.5.2%2Fcss%2Fall.min.css&v=-u3vE84Wo_U">
+    </head>
+    <body>
+        <main>
+            <section class="glass"></section>
+            <div class="dashboard">
+                <img src="./images/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Search"/>
+                <h1 class="typing">Roy Mbui...</h1>
+            </div>
+            <div class="icon-1">
+                <a  onclick=showPopUpPage() href="#"><img src="./images/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Home"/></a>
+            </div>
+            <div class="icon-2">
+                <a onclick=showAboutPage() href="#"><img src="./images/account_circle_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="About Me"/></a>
+            </div>
+            <div class="icon-3">
+                <a onclick=showEducationPage() href="#"><img src="./images/school_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Education"/></a>
+            </div>
+            <div class="icon-4">
+                <a onclick=showContactPage() href="#"><img src="./images/call_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Contact me"/></a>
+            </div>
+            <div class="pop-up-page">
+                <div>
+                    <h2>Landing Page</h2>
+                    <p>Welcome to my portfolio website. Feel free to look around.</p>
+                </div>
+                <div class="x-button">
+                    <a onclick=closePopUpPage() href="#"><img src="./images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"/></a>
+                    <script>
+                        function closePopUpPage(){
+                            const popUpPage = document.querySelector('.pop-up-page');
+                            popUpPage.style.display = 'none';
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <h2>About me</h2>
+                    <p>Hi, I'm Roy. I'm a student at Moringa School and an aspiring full stack web developer.</p>
+                    <p>I love solving problems and exploring different approaches to issues.</p>
+                </div>
+                <div class="x-button">
+                    <a onclick=closeAboutPage() href="#"><img src="./images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"/></a>
+                    <script>
+                        function closeAboutPage(){
+                            const about = document.querySelector('.about');
+                            about.style.display = 'none';
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="education">
+                <div>
+                    <h2>My Education & Skills</h2>
+                    <p>I'm a highschool graduate. I have proficiency in <strong>Python, JavaScript and C++.</strong></p>
+                    <p>I'm a part-time bug-bounty hunter on <a href="https://hackerone.com" target="_blank">HackerOne</a>.</p>
+                    <p>Currently, I'm a student at Moringa School working towards becoming a full-stack web developer.</p>
+                </div>
+                <div class="x-button">
+                    <a onclick=closeEducationPage() href="#"><img src="./images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"/></a>
+                    <script>
+                         function closeEducationPage(){
+                            const education = document.querySelector('.education');
+                            education.style.display = 'none';
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="contact">
+                <p>I look forward to working with you and revolutionizing the web development landscape. Feel free to reach out to me on these platforms.</p>
+                <p class="socials">
+                    <a class="github" href="https://github.com/mbxisbankai" target="_blank"><img src="./images/github-mark.png"></a>
+                    <a class="instagram" href="https://instagram.com/roy.mbui" target="_blank"><img src="./images/instagram.png"></a>
+                    <a class="gmail" href="mailto:roy.mbui@student.moringaschool.com" target="_blank"><img src="./images/gmail.png"></a>
+                </p>
+                <div class="x-button">
+                    <a onclick=closeContactPage() href="#"><img src="./images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"/></a>
+                    <script>
+                        function closeContactPage(){
+                            const contact = document.querySelector('.contact');
+                            contact.style.display = 'none';
+                        }
+                    </script>
+                </div>
+            </div>
+            <script>
+                function showPopUpPage(){
+                    const popUpPage = document.querySelector('.pop-up-page');
+                    popUpPage.style.display = 'flex';
+                }
+                function showAboutPage(){
+                    const aboutPage = document.querySelector('.about');
+                    aboutPage.style.display = 'flex';
+                }
+                function showEducationPage(){
+                    const aboutPage = document.querySelector('.education');
+                    aboutPage.style.display = 'flex';
+                }
+                function showContactPage(){
+                    const aboutPage = document.querySelector('.contact');
+                    aboutPage.style.display = 'flex';
+                }
+                
+                </script>
+        </main>
+    </body>
+</html>
